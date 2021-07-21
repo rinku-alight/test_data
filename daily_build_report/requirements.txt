@@ -1,0 +1,6 @@
+pandas
+requests
+jmespath
+pprintpp
+numpy
+bs4
