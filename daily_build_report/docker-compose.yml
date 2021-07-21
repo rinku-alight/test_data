@@ -1,0 +1,23 @@
+---
+version: '3.8'
+services:
+
+  repo-data:
+    image: repo-data-collection:latest
+    volumes:
+      - "./output:/home/appuser/output:rw"
+    environment:
+      - USERNAME
+      - ARTIFACTORY_BASE_URL
+      - ACCESS_KEY
+      - BB_TOKEN
+      - BB_USERNAME
+      - BB_BASE_URL
+      - FILE_SERVER
+      - JIRA_USER
+      - JIRA_PWD
+    command: run.sh
+
+    
+
+  
